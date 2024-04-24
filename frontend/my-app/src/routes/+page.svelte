@@ -5,7 +5,6 @@
 	}
 
     let data = fetchDataFromApi("London")
-    console.log(data);
 
     async function increment(e) {
         data = fetchDataFromApi(e.target.value);

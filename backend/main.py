@@ -18,14 +18,11 @@ app.add_middleware(
 
 api_key = "4ea1dd5d939e17386f697c3ded86afb7"
 
-
-
 cities = {
     "London" : {"lat": 51.5072, "lon": -0.1276},
     "New York" : {"lat": 40.7128, "lon": -74.0060},
     "Paris" : {"lat": 48.8566, "lon": 2.3522}
 }
-
 
 @app.get("/{location}")
 def read_root(location: str):
