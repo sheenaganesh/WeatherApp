@@ -6,15 +6,14 @@
 
     let data = fetchDataFromApi("London")
 
-    async function increment(e) {
+    async function dropDownChange(e) {
         data = fetchDataFromApi(e.target.value);
     }
-
 </script>
 
 <h1>Weather app</h1>
 <h1>current weather</h1>
-<select on:change={increment}> 
+<select on:change={dropDownChange}> 
     <option value="London">London</option>
     <option value="New York">New York</option>
     <option value="Paris">Paris</option>
