@@ -24,4 +24,6 @@
 {:then data}
     <p>Temperature is {data.Temperature}</p>
     <p>Weather is {data.Weather}</p>
+{:catch error}
+    <p>something went wrong</p>
 {/await}
